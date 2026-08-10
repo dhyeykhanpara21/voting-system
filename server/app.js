@@ -1,3 +1,8 @@
+const buffer = require('buffer');
+if (!buffer.SlowBuffer) {
+    buffer.SlowBuffer = buffer.Buffer;
+}
+
 console.log('hi')
 const express=require('express')
 const app=express()
